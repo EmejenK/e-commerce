@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+}
+/***************Navigation bar*********************/
+.topnav {
+display: flex;
+background-color: aqua;
+padding: 15px;
+}
