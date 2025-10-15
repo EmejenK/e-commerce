@@ -6,4 +6,23 @@
 display: flex;
 background-color: aqua;
 padding: 15px;
+
+}
+.topnav a{
+    margin-left: 25px;
+    text-decoration: none;
+    
+}
+#logo {
+font-size: 35px;
+}
+#links {
+    margin-left: 750px;
+    padding-top: 10px;
+    font-size: 18px;
+    
+}
+#links a {
+    text-decoration: none;
+    
 }
