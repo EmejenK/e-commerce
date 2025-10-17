@@ -40,7 +40,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 2px 5px;
 }
 #links ul li a:hover{
-    background-color: rgb(203, 168, 236);
+    background-color: blueviolet;
     transition: 0.5s;
     color: white;
 }
@@ -122,7 +122,81 @@ button {
 button:hover {
             background: #0056b3;
 }
-
+/***********The Footer**************/
+.main-footer {
+background-color: #e6e5e5;
+margin-top: 40px;
+}
+.footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.footer ul h4 {
+    font-size: 21px;
+}
+.footer ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 6px;
+}
+.footer ul li a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #464545;
+    border: 1px solid #727171;
+    border-radius: 5px;
+    border-bottom-color: rgb(56, 2, 107);
+    border-bottom-width: 2px;
+    padding: 2px;
+}
+.footer ul li a:hover {
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+.visit h4 {
+    font-size: 21px;
+}
+.visit a {
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #464545;
+}
+.visit a:hover {
+    transition: 0.5s;
+    color: rgb(47, 236, 47);
+}
+.visit a i {
+    font-size: 25px;
+    color: blueviolet;
+    margin-right: 8px;
+}
+hr {
+    border-width: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    border-color: blueviolet;
+}
+.copyright {
+    text-align: center;
+}
+.copyright pre {
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 20px;
+    color: #464545;
+}
+.copyright p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
 /**********************ABOUT PAGE*************************/
 .about{
     padding-top: 70.3px;
