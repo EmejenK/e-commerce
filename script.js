@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeGallery() {
-    const collection = document.getElementById('.Collection');
+    const collection = document.getElementById('Collection');
     const images = collection.getElementsByTagName('img');
     
     // Make images resizable
