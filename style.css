@@ -1,3 +1,6 @@
+
+/****Importing google fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +23,9 @@ header .topnav a{
 #logo {
 font-size: 35px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logo a{
+color: rgba(127, 4, 243, 0.993);
 }
 #links ul{
     list-style: none;
@@ -81,31 +87,77 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.Collection {
-    display: flex;
-    padding: 20px;
-    gap: 15px; /***spacing around the images*/
-    border: 1px solid #ddd;
-    margin: 20px 0;
-    align-items: center;
-    scroll-behavior: smooth;
-    min-height: 200px;
+.Collection-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
 }
-.Collection img{
-    height: 150px;
-    width: auto;
-    min-width: 100px;
-    max-width: 300px;
-    object-fit: cover;
+.image-list .image-item {
+    list-style: none;
+}
+.image-list .image-item .image-link {
+    user-select: none;
+    display: block;
+    background: #ecc2c2;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
     border: 2px solid transparent;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    box-shadow:0px 7px 7px rgb(151, 151, 151);
+    transition: 0.4s ease;
 }
-.Collection img.resizing {
-            border-color: #ff5722;
-            cursor: nwse-resize;
-        }
+.image-list .image-item .image-link:active {
+     cursor: grabbing;
+}
+.image-list .image-item :hover{
+    border-color: rgb(76, 1, 138);
+}
+.image-list .image-link .image {
+    width: 100%;
+    aspect-ratio: 20 / 20; /**resizes image width against height*/
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-list .image-link p {
+    color: #464545;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #dde4ff ;
+    width: fit-content;
+    border-radius: 50px;
+}
+.image-list .image-link h3 {
+    font-size: 1.19rem;
+    color: blueviolet;
+    font-weight: 600;
+}
+.image-list .image-link .Add-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 30px 0 5 px;
+    border: 2px solid #5372f0;
+    background: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.swiper-slide-button {
+    color: #5372f0;
+    margin-top: -35px;
+}
+@media screen and (max-width: 768px) {
+    .Collection-wrapper{
+        margin: 0 10px 25px;
+    }
+    .Collection-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+
+        /********
 .controls {
             margin: 10px 0;
             display: flex;
@@ -121,7 +173,7 @@ button {
 }
 button:hover {
             background: #0056b3;
-}
+} ****************/
 /***********The Footer**************/
 .main-footer {
 background-color: #e6e5e5;
