@@ -1,31 +1,25 @@
-new Swiper('.Collection-wrapper', {
-  loop: true,
-    spaceBetween: 30,
-  // Pagination bullets
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-  },
+// Simple version - remove breakpoints temporarily
+document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.Collection-wrapper', {
+        loop: true,
+        spaceBetween: 30,
+        slidesPerView: 3, // Fixed number for testing
+        centeredSlides: false,
+        speed: 1000,
+        
+        autoplay: {
+            delay: 100,
+            disableOnInteraction: false,
+        },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-//Responsive breakpoints
-  breakpoints: {
-    0: {
-        slidesPerView: 1
-    },
-    768: {
-        slidesPerView: 2
-    },
-    1024: {
-        slidesPerView: 3
-    },
-    1200: {
-        slidesPerView: 4
-    },
-  }
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
 });
