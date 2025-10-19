@@ -90,6 +90,7 @@ color: rgba(127, 4, 243, 0.993);
 .container {
     max-width: 100%;
     padding: 40px 20px;
+    background-color: #f7f7f7;
 }
 .Collection-wrapper {
     width: 100%;
@@ -128,22 +129,20 @@ color: rgba(127, 4, 243, 0.993);
     width: 100%;
     max-width: 280px;
     display: block;
-    background: #f0eeee;
-    padding: 20px;
-    border-radius: 15px;
+    background: #d5d1f3;
+    border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     text-align: center;
-    /*min-width: 280px;  Minimum size for mobile*/
 }
 
 .image-list .image-item .image-link:active {
      cursor: grabbing;
 }
 .image-list .image-item :hover{
-    border-color: rgb(76, 1, 138);
+    border-color: rgb(58, 2, 104);
 }
 .image-list .image-link .image {
     width: 100%;
@@ -159,11 +158,12 @@ color: rgba(127, 4, 243, 0.993);
     font-size: 1.1rem;
     font-weight: 600;
     margin: 15px 0;
-
     margin: 15px 0;
     border-radius: 50px;
     text-align: center;
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
     /*width: fit-content;
     border-radius: 50px;
@@ -218,12 +218,12 @@ color: rgba(127, 4, 243, 0.993);
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 20px 0 5px;
-    border: 2px solid #5372f0;
+    margin: 20px 100px 10px;
+    border: 2px solid #02571e;
     background: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     cursor: pointer;
     transition: 0.4s ease;
 }
