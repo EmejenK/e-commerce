@@ -369,8 +369,9 @@ hr {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 18px;
+    color: #2b2a2a;
 }
-/**********************ABOUT PAGE*************************/
+/**********************ABOUT PAGE**********************************************************/
 .about{
     padding-top: 70.3px;
 }
@@ -383,7 +384,7 @@ hr {
     text-align: center;
     font-size: 30px;
     color: rgb(255, 255, 255);
-    transform: translate(0%, -400%); /****Moved ABOUT above***/
+    transform: translate(0%, -300%); /****Moved ABOUT above***/
 }
 .story{
     display: flex;
@@ -424,4 +425,26 @@ border: 2px solid #727171;
     font-size: 15px;
     font-family: sans-serif;
     margin-top: 20px;
+}
+/****************************CATALOGUE PAGE************************************************/
+.catalogue {
+    margin-top: 100px;
+}
+.shoppers{
+    text-align: center;
+}
+.shoppers h3 {
+    border: 2px solid black;
+    padding: 3px;
+    border-style: inset;
+    display: inline-block;
+    font-family: courier;
+    cursor: pointer;
+    color: #464545;
+}
+.shoppers p {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #464545;
+    font-weight: 700;
 }
