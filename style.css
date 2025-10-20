@@ -1,6 +1,9 @@
 
 /****Importing google fonts**/
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap');
+/*****Importing google fonts links for cart navigation****
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800&display=swap');*/
+
 *{
     margin: 0;
     padding: 0;
@@ -41,15 +44,16 @@ color: rgba(127, 4, 243, 0.993);
 #links ul li {
     margin-left: 20px;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 17px;
 }
 #links ul li a {
     text-decoration: none;
-    color: rgb(14, 13, 13);
-    border: 1px solid rgb(56, 34, 52);
+    color: #636262;
+    border: 1px solid rgb(80, 40, 72);
     border-radius: 5px; 
     border-style:outset;
     padding: 2px 5px;
+    font-family: courier;
     display: block;
 }
 #links ul li a:hover{
@@ -427,6 +431,80 @@ border: 2px solid #727171;
     margin-top: 20px;
 }
 /****************************CATALOGUE PAGE************************************************/
+.cart-header {
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 1rem 0;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.burger-icon {
+    padding: 10px;
+    background-color: #a09f9f;
+    color: #111111;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-box {
+    background-color: #f4f4f5;
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 0 1rem;
+    }
+.search-box i{
+    color: #111111;
+}
+.search-box input {
+    background: transparent;
+    padding: 10px;
+    border: none;
+}
+.menu-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-icons i{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #a09f9f;
+}
+.fa-shopping-cart {
+    background-color: transparent !important;
+    border: 1px solid;
+    color: #858484;
+}
+.cart-icon {
+    position: relative;
+}
+.cart-icon span{
+    background-color: #68f368;
+    color: #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+
+}
+
+
+
+
+
 .catalogue {
     margin-top: 100px;
 }
