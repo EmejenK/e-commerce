@@ -436,6 +436,7 @@ border: 2px solid #727171;
     text-decoration: none;
     box-sizing: border-box;
     padding: 1rem 0;
+    margin: 0 20px 0 20px;
 }
 .header-menu {
     display: flex;
@@ -501,28 +502,55 @@ border: 2px solid #727171;
 
 }
 
-
-
-
-
 .catalogue {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .shoppers{
     text-align: center;
+    background-image: url('images/show.jpg');
+    background-size: cover;
+    height: 40vh;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 20% 0 20%;
+    filter: brightness(75%);
 }
 .shoppers h3 {
-    border: 2px solid black;
-    padding: 3px;
-    border-style: inset;
+    padding-top: 23px;
     display: inline-block;
     font-family: courier;
     cursor: pointer;
-    color: #464545;
+    color: rgb(52, 175, 4);
 }
 .shoppers p {
     margin-top: 20px;
+    font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
-    color: #464545;
-    font-weight: 700;
+    color: rgb(94, 247, 74);
+}
+/******Main Section*****/
+.section-heading{
+font-size: 18px;
+text-transform: uppercase;
+margin: 1rem 0 10px 0;
+color: #555555;
+font-family: courier;
+}
+.clothe-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.clothe-item{
+    width: 114px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #858484;
+}
+.clothe-item img{
+    width: 100%;
+    border-top: 10px;
 }
