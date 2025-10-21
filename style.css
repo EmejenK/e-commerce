@@ -570,6 +570,11 @@ border: 2px solid #727171;
     justify-content: space-around;
     cursor: pointer;
 }
+.card-title {
+    font-size: 16px;
+    color: #636262;
+    font-family: courier;
+}
 .card{
     width: 190px;
     display: flex;
@@ -594,6 +599,7 @@ border: 2px solid #727171;
     display: flex;
     align-items: center;
     width: 100%;
+    font-weight: 600;
     justify-content: space-between;
 }
 .card-price.price{
@@ -638,6 +644,9 @@ border: 2px solid #727171;
     right: 20px;
     top: 10px;
     cursor: pointer;
+}
+.cart-menu h3{
+    color: rgb(158, 34, 241);
 }
 .cart-items {
     display: flex;
