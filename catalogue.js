@@ -19,26 +19,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    addToCartButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
+    addToCartButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            // Find the closest card container to get the specific item details
+            const card = event.target.closest('.card');
+            
+            if (!card) {
+                console.error('Could not find card element');
+                return;
+            }
+
+            const itemName = card.querySelector('.card-title').textContent;
+            const itemPriceText = card.querySelector('.price').textContent;
+            const itemPrice = parseFloat(itemPriceText.replace('$', ''));
+
             const item = {
-                name: document.querySelectorAll('.card .card-title')[index].textContent,
-                price: parseFloat(
-                    document.querySelectorAll('.price')[index].textContent.slice(1),
-                ),
+                name: itemName,
+                price: itemPrice,
                 quantity: 1,
             };
 
-            const existingItem = cartItems.find(
-                (cartItem) => cartItem.name === item.name,
+            // Check if item already exists in cart
+            const existingItemIndex = cartItems.findIndex(
+                (cartItem) => cartItem.name === item.name
             );
-            if (existingItem) {
-                existingItem.quantity++;
+
+            if (existingItemIndex !== -1) {
+                // Item exists, increase quantity
+                cartItems[existingItemIndex].quantity++;
             } else {
+                // Item doesn't exist, add new item
                 cartItems.push(item);
             }
-
-            totalAmount += item.price;
 
             updateCartUI();
         });
@@ -78,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function removeItemFromCart(index) {
         if (index >= 0 && index < cartItems.length) {
             const removedItem = cartItems.splice(index, 1)[0];
-            totalAmount -= removedItem.price * removedItem.quantity;
             updateCartUI();
         }
     }
