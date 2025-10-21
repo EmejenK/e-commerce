@@ -437,12 +437,14 @@ border: 2px solid #727171;
     box-sizing: border-box;
     padding: 1rem 0;
     margin: 0 20px 0 20px;
+    background-color: #02571e;
+    
 }
 .header-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 .burger-icon {
     padding: 10px;
@@ -503,7 +505,7 @@ border: 2px solid #727171;
 }
 
 .catalogue {
-    margin-top: 50px;
+  padding-top: 100px;
 }
 .shoppers{
     text-align: center;
@@ -607,7 +609,7 @@ font-family: courier;
     position: fixed;
     top: 0;
     /*right: 0;*/
-    right:-300px;
+    right:-350px;
     background-color: whitesmoke;
     box-shadow: black;
     transition: right 0.3s ease-in-out;
@@ -625,7 +627,7 @@ font-family: courier;
     top: 10px;
     cursor: pointer;
 }
-.cart-tems {
+.cart-items {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -665,4 +667,13 @@ font-family: courier;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
+}
+.remove-btn{
+    background-color: #5372f0;
+    color: #000;
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    border: none;
 }
