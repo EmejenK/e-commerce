@@ -878,7 +878,7 @@ margin-left: 15px;
     margin: 10px;
     font-weight: 500;
     border-radius: 7px;
-     color: #b61cf3;
+    color: #b61cf3;
 }
 .contact-inputs:focus {
     border:1px solid blueviolet;/***inputs border once you click***/
@@ -899,6 +899,11 @@ margin-left: 15px;
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 0px 10px 15px -3px rgb(7, 0, 0);
+}
+@media screen and (max-width: 610px) and (min-width: 300px){
+  .map {
+    margin-top: -80px;
+  }
 }
 .map iframe {
     border-radius: 10px;
