@@ -513,6 +513,11 @@ margin-left: 15px;
     margin-top: -2px;
     
 }
+@media screen and (max-width: 776px) and (min-width: 300px){
+    .cart-header{
+        margin-top: 37px;
+    }
+}
 .header-menu {
     display: flex;
     justify-content: space-between;
