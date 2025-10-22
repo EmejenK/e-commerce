@@ -440,21 +440,35 @@ hr {
 .story{
     display: flex;
     margin-top: 10px;
-    justify-content: space-around;
+    padding: 0 50px 0 30px;
+    justify-content: space-between;
 }
 .story h2 {
     padding-left: 70px;
 }
-.story pre {
+.story p {
     color: #858484;
     font-family: sans-serif;
     margin-top: 20px;
     font-size: 15px;
 }
-.story span {
+.story .sto {
 border: 2px solid #727171;
+margin-left: 15px;
 }
-.story span img {
+@media screen and (max-width: 805px) and (min-width: 300px){
+    .story  {
+       display: block;
+    }
+.story .sto {
+    margin-top: 20px;
+    width: fit-content;
+}
+.story .sto img {
+    padding-top: 20px;
+}
+}
+.story .sto img {
     height: 300px;
     width: 350px;
     transform: translate(8%, -8%);
@@ -464,17 +478,24 @@ border: 2px solid #727171;
 .mission {
     display: flex;
     margin-left: 30px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 30px;
+    padding: 0 50px 0 30px;
 }
-.mission span img {
+@media screen and (max-width: 805px) and (min-width: 300px){
+    .mission {
+        display: block;
+    }
+}
+.mission .colle img {
     height: 250px;
     width: 350px;
 }
-.mission pre {
+.mission p {
     color: #858484;
     font-size: 15px;
     font-family: sans-serif;
+    padding-left: 15px;
     margin-top: 20px;
 }
 /****************************CATALOGUE PAGE************************************************/
