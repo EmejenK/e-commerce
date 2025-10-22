@@ -96,6 +96,12 @@ color: rgba(127, 4, 243, 0.993);
     margin-left: 18%;
     margin-top: 80px;
 }
+@media screen and (max-width: 774px) and (min-width: 300px) {
+    .photo img{
+    width: 150px;
+    margin-top: 190px;
+}
+}
 #introduction {
     padding-top: 230px;
 }
@@ -112,7 +118,7 @@ color: rgba(127, 4, 243, 0.993);
 }
 @media screen and (max-width: 774px) and (min-width: 300px) {
     #introduction p{
-        font-size: 12px;
+        font-size: 11px;
         margin-top: -60%;
         color: black;
     }
