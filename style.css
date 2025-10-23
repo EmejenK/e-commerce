@@ -557,13 +557,16 @@ margin-left: 15px;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #02571e;
-    margin-top: -3px;  
-   
+    margin-top: -3px; 
 }
 @media screen and (max-width: 773px) and (min-width: 300px){
     .cart-header {
-        margin-top: -10px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 565px) and (min-width: 310px){
+    .cart-header {
+        margin-top: 40px;
     }
 }
 .header-menu {
