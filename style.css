@@ -508,6 +508,12 @@ margin-left: 15px;
     padding-left: 15px;
     margin-top: 20px;
 }
+@media screen and (max-width: 450px) and (min-width: 250px){
+    .mission .colle img{
+    width: 280px;
+    height: 200px;
+    }
+}
 
 /***************THE FOUNDERS**********************/
 .founders hr{
