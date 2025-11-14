@@ -81,24 +81,52 @@ color: rgba(127, 4, 243, 0.993);
     display: flex;
     width: 100%;
     justify-content: space-around;
-   
+    background-image: url(images/show.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    background-blend-mode: darken;
+    
 }
-#introduction {
+/*@media screen and (max-width: 680px) and (min-width: 200px) {
+    .first-image{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-image: url(images/show.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+}*/
+
+/*#introduction {
     background-color: rgba(210, 105, 241, 0.85);
     border-radius: 30%70%70%30%/30%30%70%70%;
     margin-top: 160px;
-}
+}*/
 #introduction p{
-    margin-top: -60px;
+    margin-top: -10px;
+}
+
+#introduction {
+    padding-left: 2rem;
 }
 .photo img{
     width: 370px;
-    margin-left: 18%;
+    
+    margin-right: 3rem;
     margin-top: 80px;
+    background: linear-gradient(to bottom left, #ff00ff 0%, #9900ff 90%);
+    border-radius: 49% 51% 61% 39% / 35% 77% 23% 65% ;
+    border-width: 400px;
 }
 @media screen and (max-width: 774px) and (min-width: 300px) {
     .photo img{
-    width: 150px;
+    width: 250px;
     margin-top: 190px;
 }
 }
@@ -107,26 +135,26 @@ color: rgba(127, 4, 243, 0.993);
 }
 #introduction p {
     font-size: 25px;
-    color: rgb(241, 238, 241);
+    color: rgb(109, 19, 109);
     font-family: courier;
+    font-weight: 700;
 }
 #introduction h2{
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 27px;
     padding-left: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 @media screen and (max-width: 774px) and (min-width: 300px) {
     #introduction p{
-        font-size: 11px;
-        margin-top: -60%;
-        color: black;
+        font-size: 18px;
+        color: rgb(109, 19, 109);
     }
     #introduction h2{
         font-size: 16px;
     }
     .first-image{
-    justify-content: space-evenly;
+    justify-content: space-around;
    
 }
 
@@ -345,6 +373,82 @@ button {
 button:hover {
             background: #0056b3;
 } ****************/
+
+/**************our Services****************/
+.services {
+    margin-top: 1rem;
+}
+.services h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    color: blueviolet;
+}
+.services-offered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.service-wrapper {
+    background: rgb(243, 242, 242);
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0.6rem;
+    box-shadow: 0 10px 15px 10px rgb(228, 227, 227);
+
+}
+.service-wrapper .img {
+    width: 220px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.service-wrapper h3{
+    text-align: center;
+    font-size: 17px;
+    font-family: georgia;
+    color: #3b3b3b;
+}
+.service-wrapper p {
+    font-size: 12px;
+    font-family: courier;
+    text-align: center;
+    color: #858484;
+    padding: 6px;
+}
+.quote {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.main-quote {
+    background: rgb(221, 192, 248);
+    padding: 55px;
+    border: 0PX solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+.main-quote span {
+    color:  rgb(100, 0, 22);
+}
+.main-quote p {
+    padding: 10px 0 20px 0;
+    color: #3b3b3b;
+    font-family: courier;
+    
+}
+.main-quote a{
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: 4px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 9px;
+
+}
 /***********The Footer**************/
 .main-footer {
 background-color: #e6e5e5;
